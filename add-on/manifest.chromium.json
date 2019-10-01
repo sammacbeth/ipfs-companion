@@ -1,3 +1,15 @@
 {
+  "content_scripts": [
+    {
+      "all_frames": true,
+      "js": [
+        "dist/bundles/ipfsProxyContentScript.bundle.js"
+      ],
+      "matches": [
+        "<all_urls>"
+      ],
+      "run_at": "document_start"
+    }
+  ],
   "incognito": "not_allowed"
 }
